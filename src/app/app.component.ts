@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { ProfessorComponent } from "./+paige/professor/professor.component";
 import { StudentComponent } from "./+paige/student/student.component";
 import { BooksComponent } from "./+paige/books/books.component";
+import { LessonComponent } from "./+paige/lesson/lesson.component";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,8 @@ import { BooksComponent } from "./+paige/books/books.component";
     RouterOutlet,
     ProfessorComponent,
     StudentComponent,
-    BooksComponent
+    BooksComponent,
+    LessonComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

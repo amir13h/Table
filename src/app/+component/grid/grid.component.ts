@@ -18,5 +18,4 @@ export class GridComponent {
   @Input() columns: string[] = []
   @Output() onEdit = new EventEmitter();
   @Output() onRemove = new EventEmitter();
-
 }
