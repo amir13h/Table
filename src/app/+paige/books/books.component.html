@@ -1,4 +1,9 @@
+@if (event==true) {
+    <app-form></app-form>
+}
 <grid
     [columns]="['id','name']"
     [data]="books"
+    [name]="'books'"
+    (onformabel)="on($event)"
 />

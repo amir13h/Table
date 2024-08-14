@@ -1,17 +1,23 @@
 import { Component } from '@angular/core';
 import { GridComponent } from '../../+component/grid/grid.component';
 import { Student } from '../../+models/student';
+import { FormComponent } from '../form/form.component';
 
 @Component({
   selector: 'app-student',
   standalone: true,
   imports: [
-    GridComponent
+    GridComponent,
+    FormComponent
   ],
   templateUrl: './student.component.html',
   styleUrl: './student.component.css'
 })
 export class StudentComponent {
+  event:boolean=false;
+  on($event: any) {
+    this.event=$event;
+  }
 remove(da: any) {
   console.log('remove');
   console.log(da);

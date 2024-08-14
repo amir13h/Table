@@ -1,4 +1,11 @@
+@if (event==true) {
+    <app-form></app-form>
+}
 <grid
 [data]="professor"
 [columns]="['id','fullname']"
+[name]="'professor'"
+[editabel]="false"
+[removeabel]="false"
+(onformabel)="on($event)"
 />

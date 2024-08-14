@@ -1,5 +1,10 @@
+@if (event==true) {
+    <app-form></app-form>
+}
 <grid
 [columns]="['id','title']"
 [data]="lesson"
+[name]="'lesson'"
 (onEdit)="edit($event)"
+(onformabel)="on($event)"
 />

@@ -1,21 +1,29 @@
+<h2 (click)="click()">{{name}}</h2>
+
 <table>
     <tr>
         @for (item of columns; track $index) {
         <td id="in">{{item}}</td>
         }
-        <th>
-            
-        </th>
+        @if (removeabel||editabel) {
+        <th></th>
+        }
     </tr>
     @for (da of data; track $index) {
-        <tr>
-            @for (col of columns; track $index) {
-                <td>{{da[col]}}</td>
+    <tr>
+        @for (col of columns; track $index) {
+        <td>{{da[col]}}</td>
+        }
+        @if (removeabel||editabel) {
+        <td>
+            @if (editabel) {
+            <button (click)="edit(da)">📝</button>
             }
-            <td>
-                <button (click)="edit(da)">📝</button>
-                <button (click)="remove(da)">❌</button>
-            </td>
-        </tr>
+            @if (removeabel) {
+            <button (click)="remove(da)">❌</button>
+            }
+        </td>
+        }
+    </tr>
     }
 </table>

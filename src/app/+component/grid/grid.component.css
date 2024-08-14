@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -27,4 +30,8 @@ table th {
     text-align: left;
     background-color: #04AA6D;
     color: white;
+}
+h2{
+    text-align: center;
+    cursor: pointer;
 }
