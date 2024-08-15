@@ -1,0 +1,94 @@
+::ng-deep form {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #005f73, #0a9396, #94d2bd);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+::ng-deep form p {
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+::ng-deep form input[type="text"] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+::ng-deep form input[type="text"]::placeholder {
+    color: #f5f5f5;
+    opacity: 0.8;
+}
+
+::ng-deep form input[type="text"]:focus {
+    background-color: #ca6702;
+    outline: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+::ng-deep form input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+::ng-deep form input[type="text"]::selection {
+    background-color: #ee9b00;
+    color: #ffffff;
+}
+button#a1, button#a2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #005f73, #0a9396);
+    color: #ffffff;
+    padding: 12px 24px;
+    margin: 10px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button#a1::before, button#a2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+button#a1:hover::before, button#a2:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+button#a1:hover, button#a2:hover {
+    background: linear-gradient(135deg, #ee9b00, #ca6702);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}

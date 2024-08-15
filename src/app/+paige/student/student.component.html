@@ -1,8 +1,13 @@
 @if (event==true) {
-    <app-form></app-form>
+    <app-form>
+        <p>Student Properties</p>
+        <input type="text" title="id" placeholder="Inter id">
+        <input type="text" title="fullname" placeholder="Inter fullname">
+        <input type="text" title="average" placeholder="Inter average">
+    </app-form>
 }
 <grid
-    [columns]="['id','fullname','gpa']"
+    [columns]="['id','fullname','average']"
     [data]="student"
     (onEdit)="edit($event)"
     (onRemove)="remove($event)"

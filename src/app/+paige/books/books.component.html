@@ -1,5 +1,9 @@
 @if (event==true) {
-    <app-form></app-form>
+    <app-form>
+        <p>Book Properties</p>
+        <input type="text" title="id" placeholder="Inter id">
+        <input type="text" title="name" placeholder="Inter name">
+    </app-form>
 }
 <grid
     [columns]="['id','name']"
