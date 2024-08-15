@@ -1,13 +1,11 @@
 @if (event==true) {
-    <app-form>
-        <p>Book Properties</p>
-        <input type="text" title="id" placeholder="Inter id">
+    <app-form [title]="'Book'">
         <input type="text" title="name" placeholder="Inter name">
     </app-form>
 }
 <grid
     [columns]="['id','name']"
     [data]="books"
-    [name]="'books'"
+    [name]="'Books'"
     (onformabel)="on($event)"
 />

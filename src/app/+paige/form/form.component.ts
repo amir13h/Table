@@ -9,4 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class FormComponent {
   @Input() on:boolean=true;
+  @Input() title:string='';
 }

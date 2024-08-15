@@ -1,7 +1,5 @@
 @if (event==true) {
-    <app-form>
-        <p>Student Properties</p>
-        <input type="text" title="id" placeholder="Inter id">
+    <app-form [title]="'Student'">
         <input type="text" title="fullname" placeholder="Inter fullname">
         <input type="text" title="average" placeholder="Inter average">
     </app-form>
@@ -12,5 +10,5 @@
     (onEdit)="edit($event)"
     (onRemove)="remove($event)"
     (onformabel)="on($event)"
-    [name]="'student'"
+    [name]="'Student'"
 />
