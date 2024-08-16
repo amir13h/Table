@@ -27,10 +27,10 @@ edit(da:any) {
   console.log(da);
 }
   student:Student[]=[
-    {id:101,fullname:'maryam',average:19.2},
+    {id:101,fullname:'reza',average:19.2},
     {id:102,fullname:'zahra',average:13},
     {id:103,fullname:'amir',average:10.8},
-    {id:104,fullname:'maryami',average:17.3},
+    {id:104,fullname:'asghar',average:17.3},
     {id:105,fullname:'sara',average:15.5},
   ]
 
